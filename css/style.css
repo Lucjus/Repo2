@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+body {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.about-us__image {
+    width: 100%
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    padding: 2em;
+    font-size: 2rem;
+    color: #23242A
+}
+
+p {
+    line-height: 1.9em;
+    /* font-size: 1rem; */
+}
+
+.offer__item {
+    background-color: blue;
+    width: 100%;
+    height: 50vh;
+}
+
+
+.main-header {
+    background: url("../head.png") no-repeat;
+    background-position: cover;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.logo {
+    width: 50%;
+}
+
+.main-nav {
+    display: none;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    justify-content: space-between;
+}
+
+.hamburger-icon {
+    width: 9%;
+    fill: white;
+    color: white
+}
+
+.header__title {
+    margin: 2em 0 0.5em 0;
+    padding: 0;
+    color: white;
+}
+
+.header__subtitle {
+    margin: 2em 0;
+}
+
+.btn-primary {
+    color: white;
+    width: 10em;
+    padding: 1em;
+    background-color: #DC9168;
+    border: none;
+    /* font-size: 1rem; */
+}
+
+/* 
+.title-underline {
+    margin: 0 auto;
+    width: 20%;
+    height: 5px;
+    border-radius: 1px;
+    background-color: #DC9168;
+} */
+
+.k {
+    margin: 0 auto;
+    width: 20%;
+    height: 5px;
+    border-radius: 1px;
+    background-color: #DC9168;
+}
+
+.about-us {
+    min-height: 100vh;
+    /* background-color: #DEDEDE; */
+}
+
+
+
+.container {
+    position: relative;
+    /* background-color: black; */
+}
+
+.about-us__subtitle {
+    position: absolute;
+    color: white;
+    top: 20%;
+    padding: 0 1em;
+    font-size: 0.9rem;
+}
+
+.mobile-dots {
+    margin: 2em auto 3em auto;
+
+}
+
+.offer {
+    background-color: #EFEBEB;
+}
+
+.offer__item {
+    position: relative;
+    background-image: url('../mobile/g1.png');
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+    margin: 2em 0 2em 0;
+}
+
+.offer__item:nth-of-type(1) {
+    background-image: url('../mobile/g1.png');
+}
+
+.offer__item:nth-of-type(2) {
+    background-image: url('../mobile/g2.png');
+}
+
+.offer__item:nth-of-type(3) {
+    background-image: url('../mobile/g3.png');
+}
+
+.offer-number {
+    font-family: 'Alice', serif;
+    position: relative;
+    margin: 0 auto;
+    color: white;
+    top: -2em;
+    width: 4em;
+    height: 4em;
+
+    background-color: #23242A;
+}
+
+.number {
+    font-size: 3rem;
+
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+
+.offer-icons {
+    width: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 80px;
+    background-color: #23242A;
+}
+
+.offer-describtion {
+    text-align: left;
+    padding: 1em 1em;
+
+}
+
+.price-list-background {
+    background-image: url('../mobile/price.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0.9rem;
+    padding: 0 1em;
+    color: white;
+}
+
+.price-list-background p {
+    padding: 1em 0;
+}
+
+.price-list {
+    min-height: 100vh;
+
+}
+
+.price-list__title {
+    color: white;
+}
