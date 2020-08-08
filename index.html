@@ -27,10 +27,13 @@
                 </ul>
             </nav>
         </section>
-        <h1 class='header__title'>Zadbamy o Twoje finanse</h1>
-        <p class="header__subtitle">TOM-NOV zapewnia klientom specjalistyczne wsparcie księgowe i usługi, dzięki czemu
-            mogą skoncentrować się na swojej działalności i życiu osobistym.</p>
-        <button class='btn-primary'>Czytaj dalej</button>
+        <div class="hero-wrapper">
+            <h1 class='header__title'>Zadbamy o Twoje finanse</h1>
+            <p class="header__subtitle">TOM-NOV zapewnia klientom specjalistyczne wsparcie księgowe i usługi, dzięki
+                czemu
+                mogą skoncentrować się na swojej działalności i życiu osobistym.</p>
+            <button class='btn-primary'>Czytaj dalej</button>
+        </div>
     </header>
     <section class="about-us">
         <h2 class="section__title">O nas</h2>
@@ -134,8 +137,34 @@
         </div>
         </div>
     </section>
+    <section class="contact-us">
+        <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
+            <div class="form-row">
+                <label for="field-name">Imię*</label>
+                <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole"
+                    pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+            </div>
+            <div class="form-row">
+                <label for="field-email">Email*</label>
+                <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email"
+                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+            </div>
+            <div class="form-row">
+                <label for="field-message">Wiadomość*</label>
+                <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message"
+                    pattern=".+"></textarea>
+            </div>
 
+            <div class="form-row">
+                <button type="submit" class="submit-btn">
+                    Wyślij
+                </button>
+            </div>
+        </form>
+    </section>
     <footer></footer>
 </body>
+
+<script src="script.js"></script>
 
 </html>
